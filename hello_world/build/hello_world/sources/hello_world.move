@@ -12,6 +12,8 @@ module hello_world::hello_world {
     use sui::transfer;
     use sui::tx_context::{Self, TxContext};
 
+    
+
     /// An object that contains an arbitrary string
     public struct HelloWorldObject has key, store {
         id: UID,
@@ -24,7 +26,13 @@ module hello_world::hello_world {
             id: object::new(ctx),
             text: string::utf8(b"Hello World!")
         };
+        let a : bool = true;
+		let b = if (a) {
+			10
+		} else {
+			20
+		}; 
+        assert!(b > 0,0);
         transfer::public_transfer(object, tx_context::sender(ctx));
     }
-
 }

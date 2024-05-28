@@ -24,5 +24,11 @@ module person::person {
             age: 0,
             date_of_birth: 0,
 		}
+        assert!(_object.age >= 18,0)
+        if (_object.age < 18) {
+            _object.
+        } else {
+            _object.
+        }
 	}
 }
