@@ -1,9 +1,9 @@
 // Copyright (c) 2022, Sui Foundation
 // SPDX-License-Identifier: Apache-2.0
 
-/// A basic Hello World example for Sui Move, part of the Sui Move intro course:
-/// https://github.com/sui-foundation/sui-move-intro-course
-///
+// A basic Hello World example for Sui Move, part of the Sui Move intro course:
+// https://github.com/sui-foundation/sui-move-intro-course
+//
 #[allow(duplicate_alias)]
 module hello_world::hello_world {
 
